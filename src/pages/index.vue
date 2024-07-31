@@ -1,7 +1,15 @@
 <template>
-  <div>index page</div>
+  <div>home page</div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts" setup>
+definePageMeta({
+  name: "home",
+});
+
+useHead({
+  title: "Home",
+});
+</script>
 
 <style scoped></style>
