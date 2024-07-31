@@ -1,13 +1,37 @@
 <template>
   <header class="">
-    <nav>
-      <ul class="">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timeline.html">Protest Timeline</a></li>
-        <li><a href="demands.html">Students' Demands</a></li>
-        <li><a href="martyrs.html">Martyr List</a></li>
-        <li><a href="news.html">News & Programs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+    <nav class="headerNav">
+      <ul class="nav">
+        <li>
+          <NuxtLink to="/">
+            <a>Home</a>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/">
+            <a>Protest Timeline</a>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/">
+            <a>Students' Demands</a>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/">
+            <a>Martyr List</a>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/">
+            <a>News & Programs</a>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/">
+            <a>Gallery</a>
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>
@@ -17,28 +41,34 @@
 
 <style scoped>
 header {
+  width: 100%;
   background: #333;
   color: #fff;
   padding: 10px 0;
+  display: flex;
+  justify-content: center;
 }
 
-header nav ul {
+.headerNav {
+  max-width: 1366px;
+}
+.nav {
   display: flex;
   justify-content: center;
   padding: 0;
 }
 
-header nav ul li {
+.nav li {
   margin: 0 15px;
 }
 
-header nav ul li a {
+.nav li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-header nav ul li a:hover {
+.nav li a:hover {
   text-decoration: underline;
 }
 </style>
