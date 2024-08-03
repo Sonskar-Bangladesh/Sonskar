@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   srcDir: "src",
-  modules: ["@primevue/nuxt-module"],
+  serverDir: "server",
+
+  css: ["primeicons/primeicons.css", "~/assets/css/tailwind.css"],
+
+  modules: ["@primevue/nuxt-module", "@nuxtjs/supabase", "@nuxtjs/tailwindcss"],
 
   primevue: {
     options: {
@@ -19,6 +23,15 @@ export default defineNuxtConfig({
           cssLayer: false,
         },
       },
+    },
+  },
+
+  supabase: {
+    redirectOptions: {
+      login: "/admin/login",
+      callback: "/admin",
+      include: ["/admin(/*)?"],
+      cookieRedirect: false,
     },
   },
 });
