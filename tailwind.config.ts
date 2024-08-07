@@ -1,5 +1,15 @@
 export default {
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        BangladeshGreen: "#006a4e",
+        BangladeshRed: "#f42a41",
+      },
+      fontFamily: {
+        sans: ["Roboto", "Noto Sans", "sans-serif"],
+      },
+    },
+  },
   plugins: [],
   content: [
     `src/components/**/*.{vue,js,ts}`,

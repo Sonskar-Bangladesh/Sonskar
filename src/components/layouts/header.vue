@@ -1,74 +1,25 @@
 <template>
-  <header class="">
-    <nav class="headerNav">
-      <ul class="nav">
-        <li>
-          <NuxtLink to="/">
-            <a>Home</a>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/">
-            <a>Protest Timeline</a>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/">
-            <a>Students' Demands</a>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/">
-            <a>Martyr List</a>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/">
-            <a>News & Programs</a>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/">
-            <a>Gallery</a>
-          </NuxtLink>
-        </li>
-      </ul>
+  <header
+    class="bg-BangladeshGreen text-white p-4 fixed top-0 w-full flex justify-between items-center"
+  >
+    <NuxtLink :to="{ name: 'home' }">
+      <h1 class="text-2xl font-bold">সংস্কার</h1>
+    </NuxtLink>
+
+    <nav class="flex justify-between">
+      <NuxtLink>
+        <h2 href="#" class="text-white mx-2">আগামীর বাংলাদেশ</h2>
+      </NuxtLink>
+      <NuxtLink>
+        <h2 href="#" class="text-white mx-2">ঘটনাপ্রবাহ</h2>
+      </NuxtLink>
+      <NuxtLink>
+        <h2 href="#" class="text-white mx-2">শহীদগণ</h2>
+      </NuxtLink>
     </nav>
   </header>
 </template>
 
-<script lang="ts" setup></script>
+<script setup lang="ts"></script>
 
-<style scoped>
-header {
-  width: 100%;
-  background: #333;
-  color: #fff;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.headerNav {
-  max-width: 1366px;
-}
-.nav {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-.nav li {
-  margin: 0 15px;
-}
-
-.nav li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav li a:hover {
-  text-decoration: underline;
-}
-</style>
+<style scoped></style>
